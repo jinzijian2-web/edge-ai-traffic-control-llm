@@ -16,6 +16,36 @@ The system uses YOLOv8n to detect and count vehicles from a local traffic video,
 
 The project is designed to go beyond simple object detection. It continues the full pipeline from local vehicle detection to local traffic signal decision-making.
 
+## Files Not Included in This Repository
+
+Some large or environment-specific files are not uploaded to this GitHub repository.
+
+```text
+traffic.mp4
+yolov8n.pt
+.venv/
+ollama_models/
+__pycache__/
+.ipynb_checkpoints/
+```
+
+### Explanation
+
+* `traffic.mp4` is not uploaded because video files are usually large and may involve copyright or privacy issues. To run the project, users should place a local traffic video named `traffic.mp4` in the project folder.
+
+* `yolov8n.pt` is not uploaded because the YOLOv8n model weight file can be downloaded automatically by the Ultralytics package when the code is executed.
+
+* `.venv/` is not uploaded because it is a local Python virtual environment. Users should create their own environment and install dependencies using `requirements.txt`.
+
+* `ollama_models/` is not uploaded because local LLM models are stored by Ollama and can be downloaded separately using:
+
+```bash
+ollama pull qwen2.5:0.5b
+```
+
+* `__pycache__/` and `.ipynb_checkpoints/` are automatically generated temporary files and are not needed for running the project.
+
+This repository only includes the source code, configuration files, result CSV files, and sample output image needed to understand and reproduce the project.
 
 
 \## Key Idea
